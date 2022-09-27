@@ -49,7 +49,7 @@
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html" data="logo"><img src="{{url_for('static', filename='img/logo/loder.png')}}" alt="Logo">&nbsp;NALUNY</a>
+                                    <a href="{{url_for('index')}}" data="logo"><img src="{{url_for('static', filename='img/logo/loder.png')}}" alt="Logo">&nbsp;NALUNY</a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10">
@@ -57,9 +57,9 @@
                                     <!-- Main-menu -->
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
-                                            <ul id="navigation">                                                                                          
+                                            <ul id="navigation">
                                                 <li><a href="{{url_for('index')}}">Home</a></li>
-                                                <li><a href="packages.html">Packages</a></li>
+                                                <li><a href="{{url_for('dashboard')}}">Dashboard</a></li>
                                                 <li><a href="help.html">Help</a></li>
                                                 <li><a href="#">Blog</a>
                                                     <ul class="submenu">
@@ -76,7 +76,7 @@
                                         </nav>
                                     </div>
                                 </div>
-                            </div> 
+                            </div>
                             <!-- Mobile Menu -->
                             <div class="col-12">
                                 <div class="mobile_menu d-block d-lg-none"></div>
@@ -100,8 +100,8 @@
                                 <div class="hero__caption">
                                     <span data-animation="fadeInLeft" data-delay=".3s">Best Domain & hosting service provider</span>
                                     <h1 data-animation="fadeInLeft" data-delay=".6s ">Powerful web hosting</h1>
-                                    <p data-animation="fadeInLeft" data-delay=".8s">Supercharge your WordPress hosting with detailed 
-                                        website analytics, marketing tools, security, and data 
+                                    <p data-animation="fadeInLeft" data-delay=".8s">Supercharge your WordPress hosting with detailed
+                                        website analytics, marketing tools, security, and data
                                     backups all in one place.</p>
                                     <!-- Slider btn -->
                                     <div class="slider-btns">
@@ -117,7 +117,7 @@
                             </div>
                         </div>
                     </div>
-                </div>      
+                </div>
                 <!-- Single Slider -->
                 <div class="single-slider d-flex align-items-center slider-height ">
                     <div class="container">
@@ -126,8 +126,8 @@
                                 <div class="hero__caption">
                                     <span data-animation="fadeInLeft" data-delay=".3s">Best Domain & hosting service provider</span>
                                     <h1 data-animation="fadeInLeft" data-delay=".6s">Powerful web hosting</h1>
-                                    <p data-animation="fadeInLeft" data-delay=".8s">Supercharge your WordPress hosting with detailed 
-                                        website analytics, marketing tools, security, and data 
+                                    <p data-animation="fadeInLeft" data-delay=".8s">Supercharge your WordPress hosting with detailed
+                                        website analytics, marketing tools, security, and data
                                     backups all in one place.</p>
                                     <!-- Slider btn -->
                                     <div class="slider-btns">
@@ -143,7 +143,7 @@
                             </div>
                         </div>
                     </div>
-                </div>      
+                </div>
             </div>
             <!-- Slider Shape -->
             <div class="slider-shape d-none d-lg-block">
@@ -173,7 +173,7 @@
                                 <i class="fas fa-globe"></i>
                             </div>
                         </div>
-                    </form>	
+                    </form>
                     <!-- Domain List -->
                     <div class="single-domain pt-30 pb-30">
                         <ul>
@@ -484,8 +484,8 @@
     </section>
     <!-- End ask questions -->
     <!--? Testimonial Area Start -->
-    <section class="testimonial-area section-bg1">    
-        <div class="container" >   
+    <section class="testimonial-area section-bg1">
+        <div class="container" >
             <div class="testimonial-wrapper">
                 <div class="row align-items-center justify-content-center">
                     <div class=" col-lg-10 col-md-12 col-sm-11">
@@ -683,7 +683,7 @@
 <script src="{{url_for('static', filename='js/mail-script.js')}}"></script>
 <script src="{{url_for('static', filename='js/jquery.ajaxchimp.min.js')}}"></script>
 
-<!-- Jquery Plugins, main Jquery -->	
+<!-- Jquery Plugins, main Jquery -->
 <script src="{{url_for('static', filename='js/plugins.js')}}"></script>
 <script src="{{url_for('static', filename='js/main.js')}}"></script>
 
