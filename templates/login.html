@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style type="text/css">
+    body {
+      background-color: #DADADA;
+    }
+    body > .grid {
+      height: 100%;
+    }
+    .image {
+      margin-top: -100px;
+    }
+    .column {
+      max-width: 450px;
+    }
+  </style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="/static/python.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+</head>
+
+<body>
+    <div style="margin-top: -100px"  class="ui middle aligned center aligned grid">
+    <div class="column">
+    <h1 class="ui center aligned header">Login Page</h1>
+    <form class="ui large form" method="POST" action="">
+        <div class="ui stacked segment">
+            <div class="field">
+                <div class="ui left icon input">
+                    <i class="user icon"></i>
+                    {{ form.username }}
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui left icon input">
+                    <i class="lock icon"></i>
+                    {{ form.password }}
+                </div>
+            </div>
+            <div class="field">
+                <div>{{ form.submit(class="ui fluid large blue submit button") }}</div>
+            </div>
+        </div>
+        {{ form.hidden_tag() }}
+
+    </form>
+    <br>
+    <div class="ui message"> Don't have an account?
+        <a class="ui blue button" href="{{ url_for('register') }}">Sign Up</a>
+    </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
