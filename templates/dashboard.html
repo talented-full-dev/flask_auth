@@ -1,129 +1,310 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<style type="text/css">
-
-    .hidden.menu {
-      display: none;
-    }
-
-    .masthead.segment {
-      min-height: 753px;
-      padding: 1em 0em;
-    }
-    .masthead .logo.item img {
-      margin-right: 1em;
-    }
-    .masthead .ui.menu .ui.button {
-      margin-left: 0.5em;
-    }
-    .masthead h1.ui.header {
-      margin-top: 3em;
-      margin-bottom: 0em;
-      font-size: 4em;
-      font-weight: normal;
-    }
-    .masthead h2 {
-      font-size: 1.7em;
-      font-weight: normal;
-    }
-
-    .ui.vertical.stripe {
-      padding: 8em 0em;
-    }
-    .ui.vertical.stripe h3 {
-      font-size: 2em;
-    }
-    .ui.vertical.stripe .button + h3,
-    .ui.vertical.stripe p + h3 {
-      margin-top: 3em;
-    }
-    .ui.vertical.stripe .floated.image {
-      clear: both;
-    }
-    .ui.vertical.stripe p {
-      font-size: 1.33em;
-    }
-    .ui.vertical.stripe .horizontal.divider {
-      margin: 3em 0em;
-    }
-
-    .quote.stripe.segment {
-      padding: 0em;
-    }
-    .quote.stripe.segment .grid .column {
-      padding-top: 5em;
-      padding-bottom: 5em;
-    }
-
-    .footer.segment {
-      padding: 5em 0em;
-    }
-
-    .secondary.pointing.menu .toc.item {
-      display: none;
-    }
-
-    @media only screen and (max-width: 700px) {
-      .ui.fixed.menu {
-        display: none !important;
-      }
-      .secondary.pointing.menu .item,
-      .secondary.pointing.menu .menu {
-        display: none;
-      }
-      .secondary.pointing.menu .toc.item {
-        display: block;
-      }
-      .masthead.segment {
-        min-height: 350px;
-      }
-      .masthead h1.ui.header {
-        font-size: 2em;
-        margin-top: 1.5em;
-      }
-      .masthead h2 {
-        margin-top: 0.5em;
-        font-size: 1.5em;
-      }
-    }
-
-
-  </style>
-
-
+<!doctype html>
+<html class="no-js" lang="zxx">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="icon" type="image/x-icon" href="/static/python.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-</head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>NALUNY</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static', filename='img/favicon.ico')}}">
 
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/slicknav.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/flaticon.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/progressbar_barfiller.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/gijgo.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/animated-headline.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/fontawesome-all.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/themify-icons.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/slick.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/nice-select.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/custom.css')}}">
+</head>
 <body>
-<div class="pusher">
-  <div class="ui vertical masthead center aligned segment">
-    <div class="ui text container">
-      <h1 class="ui header">
-        Login Success
-      </h1>
-        <br>
-        <div>
-            <div class="ui primary button">
-                <a style="color: white" href="{{url_for('logout')}}">
-                    Logout
-                </a>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{{url_for('static', filename='img/logo/loder.png')}}" alt="">
+                </div>
             </div>
         </div>
-
     </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area header-transparent">
+            <div class="main-header ">
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html" data="logo"><img src="{{url_for('static', filename='img/logo/loder.png')}}" alt="Logo">&nbsp;NALUNY</a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">                                                                                          
+                                                <li><a href="{{url_for('index')}}">Home</a></li>
+                                                <li><a href="packages.html">Packages</a></li>
+                                                <li><a href="help.html">Help</a></li>
+                                                <li><a href="#">Blog</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="blog.html">Blog</a></li>
+                                                        <li><a href="blog_details.html">Blog Details</a></li>
+                                                        <li><a href="elements.html">Element</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="contact.html">Contact</a></li>
+                                                <!-- Button -->
+                                                <li class="button-header margin-left "><a href="{{url_for('register')}}" class="btn">Sign Up</a></li>
+                                                <li class="button-header"><a href="{{url_for('login')}}" class="btn3">Sign In</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <main>
+        <!-- Slider Area Start-->
+        <div class="slider-area slider-bg ">
+            <div class="slider-active">
+                <!-- Single Slider -->
+                <div class="single-slider d-flex align-items-center slider-height ">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-xl-5 col-lg-5 col-md-9 ">
+                                <div class="hero__caption">
+                                    <span data-animation="fadeInLeft" data-delay=".3s">Best Domain & hosting service provider</span>
+                                    <h1 data-animation="fadeInLeft" data-delay=".6s ">Powerful web hosting</h1>
+                                    <p data-animation="fadeInLeft" data-delay=".8s">Supercharge your WordPress hosting with detailed 
+                                        website analytics, marketing tools, security, and data 
+                                    backups all in one place.</p>
+                                    <!-- Slider btn -->
+                                    <div class="slider-btns">
+                                        <!-- Hero-btn -->
+                                        <a data-animation="fadeInLeft" data-delay="1s" href="industries.html" class="btn radius-btn">get started</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="hero__img d-none d-lg-block f-right">
+                                    <img src="{{url_for('static', filename='img/hero/hero_right.png')}}" alt="" data-animation="fadeInRight" data-delay="1s">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+                <!-- Single Slider -->
+                <div class="single-slider d-flex align-items-center slider-height ">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-9 ">
+                                <div class="hero__caption">
+                                    <span data-animation="fadeInLeft" data-delay=".3s">Best Domain & hosting service provider</span>
+                                    <h1 data-animation="fadeInLeft" data-delay=".6s">Powerful web hosting</h1>
+                                    <p data-animation="fadeInLeft" data-delay=".8s">Supercharge your WordPress hosting with detailed 
+                                        website analytics, marketing tools, security, and data 
+                                    backups all in one place.</p>
+                                    <!-- Slider btn -->
+                                    <div class="slider-btns">
+                                        <!-- Hero-btn -->
+                                        <a data-animation="fadeInLeft" data-delay="1s" href="industries.html" class="btn radius-btn">get started</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="hero__img d-none d-lg-block f-right">
+                                    <img src="assets/img/hero/hero_right.png" alt="" data-animation="fadeInRight" data-delay="1s">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+            <!-- Slider Shape -->
+            <div class="slider-shape d-none d-lg-block">
+                <img class="slider-shape1" src="assets/img/hero/top-left-shape.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Domain-search End -->
+</main>
+<footer>
+    <div class="footer-wrappr " data-background="assets/img/gallery/footer-bg.png">
+        <div class="footer-area footer-padding ">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <!-- logo -->
+                            <div class="footer-logo mb-25">
+                                <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                            </div>
+                            <div class="footer-tittle mb-50">
+                                <p>Subscribe our newsletter to get updates about our services</p>
+                            </div>
+                            <!-- Form -->
+                            <div class="footer-form">
+                                <div id="mc_embed_signup">
+                                    <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative mail_part" novalidate="true">
+                                        <input type="email" name="EMAIL" id="newsletter-form-email" placeholder=" Email Address " class="placeholder hide-on-focus" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'">
+                                        <div class="form-icon">
+                                            <button type="submit" name="submit" id="newsletter-submit" class="email_icon newsletter-submit button-contactForm">
+                                                Subscribe
+                                            </button>
+                                        </div>
+                                        <div class="mt-10 info"></div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- social -->
+                            <div class="footer-social mt-50">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1"></div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Company</h4>
+                                <ul>
+                                    <li><a href="#">Why choose us</a></li>
+                                    <li><a href="#"> Review</a></li>
+                                    <li><a href="#">Customers</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Carrier</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Products</h4>
+                                <ul>
+                                    <li><a href="#">Why choose us</a></li>
+                                    <li><a href="#"> Review</a></li>
+                                    <li><a href="#">Customers</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Carrier</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Support</h4>
+                                <ul>
+                                    <li><a href="#">Technology</a></li>
+                                    <li><a href="#">  Products</a></li>
+                                    <li><a href="#">Customers</a></li>
+                                    <li><a href="#">Quality</a></li>
+                                    <li><a href="#">Sales geography</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-bottom area -->
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="footer-border">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="footer-copy-right text-center">
+                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 
-  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- Scroll Up -->
+  <div id="back-top" >
+    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
 </div>
 
+<!-- JS here -->
+
+<script src="{{url_for('static', filename='js/vendor/modernizr-3.5.0.min.js')}}"></script>
+<!-- Jquery, Popper, Bootstrap -->
+<script src="{{url_for('static', filename='js/vendor/jquery-1.12.4.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/popper.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+<!-- Jquery Mobile Menu -->
+<script src="{{url_for('static', filename='js/jquery.slicknav.min.js')}}"></script>
+
+<!-- Jquery Slick , Owl-Carousel Plugins -->
+<script src="{{url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/slick.min.js')}}"></script>
+<!-- One Page, Animated-HeadLin -->
+<script src="{{url_for('static', filename='js/wow.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/animated.headline.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.magnific-popup.js')}}"></script>
+
+<!-- Date Picker -->
+<script src="{{url_for('static', filename='js/gijgo.min.js')}}"></script>
+
+<!-- Video bg -->
+<script src="{{url_for('static', filename='js/jquery.vide.js')}}"></script>
+
+<!-- Nice-select, sticky -->
+<script src="{{url_for('static', filename='js/jquery.nice-select.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.sticky.js')}}"></script>
+<!-- Progress -->
+<script src="{{url_for('static', filename='js/jquery.barfiller.js')}}"></script>
+
+<!-- counter , waypoint,Hover Direction -->
+<script src="{{url_for('static', filename='js/jquery.counterup.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/waypoints.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.countdown.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/hover-direction-snake.min.js')}}"></script>
+
+<!-- contact js -->
+<script src="{{url_for('static', filename='js/contact.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.form.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.validate.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/mail-script.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.ajaxchimp.min.js')}}"></script>
+
+<!-- Jquery Plugins, main Jquery -->	
+<script src="{{url_for('static', filename='js/plugins.js')}}"></script>
+<script src="{{url_for('static', filename='js/main.js')}}"></script>
 
 </body>
-
 </html>
