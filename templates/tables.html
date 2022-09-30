@@ -67,10 +67,6 @@
       href="{{url_for('static', filename='css/nice-select.css')}}"
     />
     <link
-    rel="stylesheet"
-    href="{{url_for('static', filename='css/style1.css')}}"
-  />
-    <link
       rel="stylesheet"
       href="{{url_for('static', filename='css/style.css')}}"
     />
@@ -78,8 +74,6 @@
       rel="stylesheet"
       href="{{url_for('static', filename='css/custom.css')}}"
     />
-   
-
   </head>
   <body>
     <!-- ? Preloader Start -->
@@ -166,143 +160,52 @@
         <div class="slider-active">
           <!-- Single Slider -->
           <div class="single-slider w-full d-flex slider-height m-t-15">
-            <div class="row w-full">
-              <div class="col-lg-3 col-full-none justify-content-center">
-                <div data-animation="fadeInLeft" data-delay=".3s">
-                  <nav id="sidebar">
-                    <div class="p-4 pt-5">
-                      <ul class="list-unstyled components mb-5">
-                        <li class="active">
-                          <!-- <a href="{{url_for('dashboard')}}" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Dashboard</a> -->
-                          <a href="{{url_for('dashboard')}}">Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="{{url_for('article')}}">Artikle</a>
-                        </li>
-                        <li>
-                          <a href="{{url_for('tables')}}">VERWALTEN</a>
-                          <!-- <a href="{{url_for('tables')}}" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">VERWALTEN</a> -->
-                          <!-- <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <li>
-                                <a href="#">Page 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Page 2</a>
-                            </li>
-                            <li>
-                                <a href="#">Page 3</a>
-                            </li>
-                          </ul> -->
-                        </li>
-                        <li><a href="{{url_for('account')}}">Account</a></li>
-                      </ul>            
-                    </div>
-                  </nav>
+            <div class="w-full" data-animation="fadeInLeft" data-delay=".5s">
+              <div class="detail-content">
+                <div class="table-content-title">
+                  <h3>Registrierte Nutzer</h3>
                 </div>
-              </div>
-              <div
-                class="col-lg-9 col-full"
-                data-animation="fadeInLeft"
-                data-delay=".5s"
-              >
-              <button type="button" style="display:none">
-                <i class="fa fa-bars"></i>
-                <span class="sr-only">Toggle Menu</span>
-              </button>
-                <div class="d-main-content">
-                  <form>
-                    <select name="cars" class="custom-select">
-                      <option selected>Custom Select Menu</option>
-                      <option value="volvo">Volvo</option>
-                      <option value="fiat">Fiat</option>
-                      <option value="audi">Audi</option>
-                    </select>
-                  </form>
-                  <div class="d-main-contnet-items">
-                    <div class="d-main-content-item">
-                      <div class="container-fluid">
-                        <div class="row w-full row-reverse">
-                          <div class="col-xl-5">
-                            <div class="d-main-content-item-content">
-                              <h3>
-                                DENON Soundsysteme Lautsprecher Boxen Receiver
-                              </h3>
-                              <div class="d-main-content-item-content-small">
-                                <div class="d-main-content-item-content-sitem">
-                                  <div
-                                    class="d-main-content-item-content-item1"
-                                  >
-                                    <p>Status:</p>
-                                    <p>Verkauflich</p>
-                                  </div>
-                                  <div
-                                    class="d-main-content-item-content-item1"
-                                  >
-                                    <p>Standort:</p>
-                                    <p>Verkauflich</p>
-                                  </div>
-                                  <div
-                                    class="d-main-content-item-content-item1"
-                                  >
-                                    <p>Zustand:</p>
-                                    <p>Verkauflich</p>
-                                  </div>
-                                </div>
-                                <div class="d-main-content-item-content-sitem">
-                                  <div
-                                    class="d-main-content-item-content-item1"
-                                  >
-                                    <p>Status:</p>
-                                    <p>Verkauflich</p>
-                                  </div>
-                                  <div
-                                    class="d-main-content-item-content-item1"
-                                  >
-                                    <p>Standort:</p>
-                                    <p>Verkauflich</p>
-                                  </div>
-                                  <div
-                                    class="d-main-content-item-content-item1"
-                                  >
-                                    <p>Zustand:</p>
-                                    <p>Verkauflich</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="d-main-content-item-title">
-                                <p>
-                                  Beschreibung: Lorem ipsum dolor sit amet,
-                                  consetetur sadipsing elitr,Lorem ipsum dolor
-                                  sit amet, consetetur sadipsing elitr Lorem
-                                  ipsum dolor sit amet, consetetur sadipsing
-                                  elitr Lorem ipsum dolor sit amet, consetetur
-                                  sadipsing elitr
-                                </p>
-                              </div>
-                              <div class="d-main-content-button">
-                                <a href="{{url_for('detail')}}">Details</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xl-7">
-                            <div class="d-main-content-right-items">
-                              <div class="d-main-content-right-item">
-                                <div class="d-main-content-right-item-img">
-                                  <img src="static/img/item.PNG" alt="item" />
-                                  <img src="static/img/item.PNG" alt="item" />
-                                  <img src="static/img/item.PNG" alt="item" />
-                                </div>
-                                <div class="d-main-content-id">
-                                  <p>ID:</p>
-                                  <p>778458</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Nutzer ID</th>
+                        <th>Firmenname</th>
+                        <th>Vorname</th>
+                        <th>Nachname</th>
+                        <th>Telefon</th>
+                        <th>E-Mail Address</th>
+                        <th>Datu</th>
+                        <th>QFFEN</th>
+                        <th>LQSCHEN</th>
+                      </tr>
+                      
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>651150</td>
+                        <td>PLOCH Transporte</td>
+                        <td>Janusz</td>
+                        <td>Ploch</td>
+                        <td>028144419981</td>
+                        <td>janusz.ploch@123.com</td>
+                        <td>17.09.2022</td>
+                        <td><button><i class="fa fa-mouse-pointer" aria-hidden="true"></i></button></td>
+                        <td><button class="delete"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+                      </tr>
+                      <tr>
+                        <td>651150</td>
+                        <td>PLOCH Transporte</td>
+                        <td>Janusz</td>
+                        <td>Ploch</td>
+                        <td>028144419981</td>
+                        <td>janusz.ploch@123.com</td>
+                        <td>17.09.2022</td>
+                        <td><button><i class="fa fa-mouse-pointer" aria-hidden="true"></i></button></td>
+                        <td><button class="delete"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
@@ -359,6 +262,57 @@
         </div>
       </div>
       <!-- Slider Area End -->
+      <!-- Domain-search start -->
+      <div class="domain-search-area section-bg1">
+        <div class="row">
+          <div class="col-xl-4 col-lg-5">
+            <h2>Search new domain</h2>
+            <p>
+              Supercharge your WordPress hosting with detailed website
+              analytics, marketing tools.
+            </p>
+          </div>
+          <div class="col-xl-8 col-lg-7">
+            <!--Hero form -->
+            <form action="#" class="search-box">
+              <div class="input-form">
+                <input type="text" placeholder="Search for a domain" />
+                <!-- icon search -->
+                <div class="search-form">
+                  <button><i class="ti-search"></i></button>
+                </div>
+                <!-- icon search -->
+                <div class="world-form">
+                  <i class="fas fa-globe"></i>
+                </div>
+              </div>
+            </form>
+            <!-- Domain List -->
+            <div class="single-domain pt-30 pb-30">
+              <ul>
+                <li>
+                  <span>.com</span>
+                  <p>$15.99</p>
+                </li>
+                <li>
+                  <span>.net</span>
+                  <p>$10.99</p>
+                </li>
+                <li>
+                  <span>.rog</span>
+                  <p>$10.99</p>
+                </li>
+                <li>
+                  <span>.me</span>
+                  <p>$10.99</p>
+                </li>
+              </ul>
+            </div>
+            <!-- Domain List  End-->
+          </div>
+        </div>
+      </div>
+      <!-- Domain-search End -->
     </main>
     <footer>
       <div
@@ -498,59 +452,53 @@
         </div>
       </div>
     </footer>
-    <!-- Scroll Up -->
     <div id="back-top">
       <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
     </div>
-
-    <!-- JS here -->
-
-    <script src="{{url_for('static', filename='js/vendor/modernizr-3.5.0.min.js')}}"></script>
-    <!-- Jquery, Popper, Bootstrap -->
-    <script src="{{url_for('static', filename='js/vendor/jquery-1.12.4.min.js')}}"></script>
-    <script src="{{url_for('static', filename='js/popper.min.js')}}"></script>
-    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
-    <!-- Jquery Mobile Menu -->
-    <script src="{{url_for('static', filename='js/jquery.slicknav.min.js')}}"></script>
-
-    <!-- Jquery Slick , Owl-Carousel Plugins -->
-    <script src="{{url_for('static', filename='js/owl.carousel.min.js')}}"></script>
-    <script src="{{url_for('static', filename='js/slick.min.js')}}"></script>
-    <!-- One Page, Animated-HeadLin -->
-    <script src="{{url_for('static', filename='js/wow.min.js')}}"></script>
-    <script src="{{url_for('static', filename='js/animated.headline.js')}}"></script>
-    <script src="{{url_for('static', filename='js/jquery.magnific-popup.js')}}"></script>
-
-    <!-- Date Picker -->
-    <script src="{{url_for('static', filename='js/gijgo.min.js')}}"></script>
-
-    <!-- Video bg -->
-    <script src="{{url_for('static', filename='js/jquery.vide.js')}}"></script>
-
-    <!-- Nice-select, sticky -->
-    <script src="{{url_for('static', filename='js/jquery.nice-select.min.js')}}"></script>
-    <script src="{{url_for('static', filename='js/jquery.sticky.js')}}"></script>
-    <!-- Progress -->
-    <script src="{{url_for('static', filename='js/jquery.barfiller.js')}}"></script>
-
-    <!-- counter , waypoint,Hover Direction -->
-    <script src="{{url_for('static', filename='js/jquery.counterup.min.js')}}"></script>
-    <script src="{{url_for('static', filename='js/waypoints.min.js')}}"></script>
-    <script src="{{url_for('static', filename='js/jquery.countdown.min.js')}}"></script>
-    <script src="{{url_for('static', filename='js/hover-direction-snake.min.js')}}"></script>
-
-    <!-- contact js -->
-    <script src="{{url_for('static', filename='js/contact.js')}}"></script>
-    <script src="{{url_for('static', filename='js/jquery.form.js')}}"></script>
-    <script src="{{url_for('static', filename='js/jquery.validate.min.js')}}"></script>
-    <script src="{{url_for('static', filename='js/mail-script.js')}}"></script>
-    <script src="{{url_for('static', filename='js/jquery.ajaxchimp.min.js')}}"></script>
-
-    <!-- Jquery Plugins, main Jquery -->
-    <script src="{{url_for('static', filename='js/plugins.js')}}"></script>
-    <script src="{{url_for('static', filename='js/main.js')}}"></script>
-
-    <script src="{{url_for('static', filename='sidejs/popper.js')}}"></script>
-
-  </body>
-</html>
+     <!-- JS here -->
+     <script src="{{url_for('static', filename='js/vendor/modernizr-3.5.0.min.js')}}"></script>
+     <!-- Jquery, Popper, Bootstrap -->
+     <script src="{{url_for('static', filename='js/vendor/jquery-1.12.4.min.js')}}"></script>
+     <script src="{{url_for('static', filename='js/popper.min.js')}}"></script>
+     <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+     <!-- Jquery Mobile Menu -->
+     <script src="{{url_for('static', filename='js/jquery.slicknav.min.js')}}"></script>
+ 
+     <!-- Jquery Slick , Owl-Carousel Plugins -->
+     <script src="{{url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+     <script src="{{url_for('static', filename='js/slick.min.js')}}"></script>
+     <!-- One Page, Animated-HeadLin -->
+     <script src="{{url_for('static', filename='js/wow.min.js')}}"></script>
+     <script src="{{url_for('static', filename='js/animated.headline.js')}}"></script>
+     <script src="{{url_for('static', filename='js/jquery.magnific-popup.js')}}"></script>
+ 
+     <!-- Date Picker -->
+     <script src="{{url_for('static', filename='js/gijgo.min.js')}}"></script>
+ 
+     <!-- Video bg -->
+     <script src="{{url_for('static', filename='js/jquery.vide.js')}}"></script>
+ 
+     <!-- Nice-select, sticky -->
+     <script src="{{url_for('static', filename='js/jquery.nice-select.min.js')}}"></script>
+     <script src="{{url_for('static', filename='js/jquery.sticky.js')}}"></script>
+     <!-- Progress -->
+     <script src="{{url_for('static', filename='js/jquery.barfiller.js')}}"></script>
+ 
+     <!-- counter , waypoint,Hover Direction -->
+     <script src="{{url_for('static', filename='js/jquery.counterup.min.js')}}"></script>
+     <script src="{{url_for('static', filename='js/waypoints.min.js')}}"></script>
+     <script src="{{url_for('static', filename='js/jquery.countdown.min.js')}}"></script>
+     <script src="{{url_for('static', filename='js/hover-direction-snake.min.js')}}"></script>
+ 
+     <!-- contact js -->
+     <script src="{{url_for('static', filename='js/contact.js')}}"></script>
+     <script src="{{url_for('static', filename='js/jquery.form.js')}}"></script>
+     <script src="{{url_for('static', filename='js/jquery.validate.min.js')}}"></script>
+     <script src="{{url_for('static', filename='js/mail-script.js')}}"></script>
+     <script src="{{url_for('static', filename='js/jquery.ajaxchimp.min.js')}}"></script>
+ 
+     <!-- Jquery Plugins, main Jquery -->
+     <script src="{{url_for('static', filename='js/plugins.js')}}"></script>
+     <script src="{{url_for('static', filename='js/main.js')}}"></script>
+   </body>
+ </html>

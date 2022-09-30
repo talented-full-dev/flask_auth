@@ -103,6 +103,22 @@ def register():
 def success():
     return render_template('success.html')
 
+@app.route('/detail')
+def detail():
+    return render_template('detail.html')
+
+@app.route('/article')
+def article():
+    return render_template('article.html')
+
+@app.route('/account')
+def account():
+    return render_template('account.html')
+
+@app.route('/tables')
+def tables():
+    return render_template('tables.html')
+
 
 if __name__ == "__main__":
     app.run(debug=True)
